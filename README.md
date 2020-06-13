@@ -26,3 +26,19 @@
 
 </p>
 </details>
+
+386. Largest Divisible Subset
+
+<details><summary>Approach</summary>
+<p>
+
+A simple solution is to generate all subsets of given set. For every generated subset, check if it is divisible or not. Finally return the largest divisible subset.
+
+An efficient solution involves following steps.
+
+1. Sort all array elements in increasing order. The purpose of sorting is to make sure that all divisors of an element appear before it.
+2. Create an array divisorsCount[] of same size as input array. divisorsCount[i] stores size of divisible subset ending with sorted[i] (In sorted array). The minimum value of divisorsCount[i] would be 1.
+3. Traverse all array elements. For every element, find a divisor sorted[j] with largest value of divisorsCount[j] and store the value of divisorsCount[i] as divisorsCount[j] + 1.
+
+</p>
+</details>

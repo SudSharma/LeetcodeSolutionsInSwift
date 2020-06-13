@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		32BF9CA02493D6E500308E47 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32BF9C9F2493D6E500308E47 /* Preview Assets.xcassets */; };
 		32BF9CBD2493D74400308E47 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32BF9CBB2493D74400308E47 /* Assets.xcassets */; };
 		32BF9CC12493D74A00308E47 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32BF9CBF2493D74A00308E47 /* LaunchScreen.storyboard */; };
 		32BF9CC52493D75500308E47 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32BF9CC22493D75500308E47 /* ContentView.swift */; };
@@ -32,7 +31,6 @@
 
 /* Begin PBXFileReference section */
 		32BF9C932493D6E300308E47 /* Leetcode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Leetcode.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		32BF9C9F2493D6E500308E47 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		32BF9CA92493D6E500308E47 /* LeetcodeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LeetcodeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		32BF9CAF2493D6E500308E47 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		32BF9CBB2493D74400308E47 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -91,17 +89,8 @@
 				32BF9CB92493D70800308E47 /* Views */,
 				32BF9CB82493D6F400308E47 /* Questions */,
 				32BF9CBA2493D71100308E47 /* Resources */,
-				32BF9C9E2493D6E500308E47 /* Preview Content */,
 			);
 			path = Leetcode;
-			sourceTree = "<group>";
-		};
-		32BF9C9E2493D6E500308E47 /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				32BF9C9F2493D6E500308E47 /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 		32BF9CAC2493D6E500308E47 /* LeetcodeTests */ = {
@@ -228,7 +217,6 @@
 				32BF9CBD2493D74400308E47 /* Assets.xcassets in Resources */,
 				32BF9CC12493D74A00308E47 /* LaunchScreen.storyboard in Resources */,
 				32BF9CCD2493FC1F00308E47 /* README.md in Resources */,
-				32BF9CA02493D6E500308E47 /* Preview Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -405,7 +393,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"Leetcode/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = 83K5ZDN9P7;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Leetcode/Resources/Info.plist;
@@ -427,7 +415,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"Leetcode/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = 83K5ZDN9P7;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Leetcode/Resources/Info.plist;

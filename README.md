@@ -1,5 +1,30 @@
 # Leetcode Solutions In Swift
 
+284. Peeking Iterator ()
+
+<details><summary>Approach</summary>
+<p>
+
+`init(_ arr: IndexingIterator<Array<Int>>)`
+1. Keep a reference of indexingIterator. 
+2. Initialize an array with all the elements from iterator. 
+3. Keep hasPeeked boolean to mark when the iterator is peeked
+4. Keep peekedElement variable to keep reference of currently peeked element.
+
+`next()` 
+1. If hasPeaked is false, remove first element from array and return value returned by iterator.next
+2. Else return peekedElement and set it to nil in deferred block.
+
+`peek()`
+1. If hasPeaked is false, remove first element from array and return value returned by iterator.next. Also set hasPeeked to true.
+2. Else return peaked element
+
+`hasNext()`
+1. Return true if hasPeeked is true or array has elements
+
+</p>
+</details>
+
 380. Insert Delete GetRandom O(1)
 
 <details><summary>Approach</summary>

@@ -21,6 +21,8 @@
 		32BF9CE5249538E300308E47 /* 284.PeekingIteratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32BF9CE4249538E300308E47 /* 284.PeekingIteratorTests.swift */; };
 		32BF9CF12495A39600308E47 /* 1.TwoSum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32BF9CF02495A39600308E47 /* 1.TwoSum.swift */; };
 		32BF9CF32495A64B00308E47 /* 1.TwoSumTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32BF9CF22495A64B00308E47 /* 1.TwoSumTests.swift */; };
+		32BF9CF52495B2E200308E47 /* 981.TimeBasedKey-ValueStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32BF9CF42495B2E200308E47 /* 981.TimeBasedKey-ValueStore.swift */; };
+		32BF9CF72495B30C00308E47 /* 981.TimeBasedKey-ValueStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32BF9CF62495B30C00308E47 /* 981.TimeBasedKey-ValueStoreTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +54,8 @@
 		32BF9CE4249538E300308E47 /* 284.PeekingIteratorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 284.PeekingIteratorTests.swift; sourceTree = "<group>"; };
 		32BF9CF02495A39600308E47 /* 1.TwoSum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 1.TwoSum.swift; sourceTree = "<group>"; };
 		32BF9CF22495A64B00308E47 /* 1.TwoSumTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 1.TwoSumTests.swift; sourceTree = "<group>"; };
+		32BF9CF42495B2E200308E47 /* 981.TimeBasedKey-ValueStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "981.TimeBasedKey-ValueStore.swift"; sourceTree = "<group>"; };
+		32BF9CF62495B30C00308E47 /* 981.TimeBasedKey-ValueStoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "981.TimeBasedKey-ValueStoreTests.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +112,7 @@
 				32BF9CE4249538E300308E47 /* 284.PeekingIteratorTests.swift */,
 				32BF9CCA2493D9CC00308E47 /* 380.InsertDeleteGetRandomTests.swift */,
 				32BF9CE02494EFB300308E47 /* 368.LargestDivisibleSubsetTests.swift */,
+				32BF9CF62495B30C00308E47 /* 981.TimeBasedKey-ValueStoreTests.swift */,
 				32BF9CAF2493D6E500308E47 /* Info.plist */,
 			);
 			path = LeetcodeTests;
@@ -120,6 +125,7 @@
 				32BF9CE2249533E300308E47 /* 284.PeekingIterator.swift */,
 				32BF9CC82493D8A700308E47 /* 380.InsertDeleteGetRandomO(1).swift */,
 				32BF9CDC2494EF5C00308E47 /* 368.LargestDivisibleSubset.swift */,
+				32BF9CF42495B2E200308E47 /* 981.TimeBasedKey-ValueStore.swift */,
 			);
 			path = Questions;
 			sourceTree = "<group>";
@@ -252,6 +258,7 @@
 				32BF9CF12495A39600308E47 /* 1.TwoSum.swift in Sources */,
 				32BF9CC52493D75500308E47 /* ContentView.swift in Sources */,
 				32BF9CC72493D75500308E47 /* SceneDelegate.swift in Sources */,
+				32BF9CF52495B2E200308E47 /* 981.TimeBasedKey-ValueStore.swift in Sources */,
 				32BF9CE3249533E300308E47 /* 284.PeekingIterator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -260,6 +267,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				32BF9CF72495B30C00308E47 /* 981.TimeBasedKey-ValueStoreTests.swift in Sources */,
 				32BF9CCB2493D9CC00308E47 /* 380.InsertDeleteGetRandomTests.swift in Sources */,
 				32BF9CE5249538E300308E47 /* 284.PeekingIteratorTests.swift in Sources */,
 				32BF9CE12494EFB300308E47 /* 368.LargestDivisibleSubsetTests.swift in Sources */,

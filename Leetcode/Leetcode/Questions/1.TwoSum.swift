@@ -20,6 +20,9 @@
  */
 
 class TwoSumSolution {
+    
+    // Runtime: 32 ms, faster than 93.04% of Swift online submissions for Two Sum.
+    // Memory Usage: 21.3 MB, less than 40.70% of Swift online submissions for Two Sum.
     func twoSum(_ nums: [Int], _ target: Int) -> [Int] {
         var dict = [Int: Int]()
         for i in 0..<nums.count {

@@ -1,5 +1,17 @@
 # Leetcode Solutions In Swift
 
+1. Two Sum
+
+<details><summary>Approach</summary>
+<p>
+
+1. Create a dictionary to keep the items already traversed in array with key as number in array and value as index of that number in array.
+2. Start traversing the numbers array from the beginning.
+3. If (target - number at current index) is present in dictionary return the combination.
+
+</p>
+</details>
+
 284. Peeking Iterator ()
 
 <details><summary>Approach</summary>

@@ -12,6 +12,16 @@
 </p>
 </details>
 
+83. Remove Duplicates from Sorted List
+
+<details><summary>Approach</summary>
+<p>
+
+1. Traverse the link list to check if next node value is same as current node, If yes delete the next node.
+
+</p>
+</details>
+
 284. Peeking Iterator ()
 
 <details><summary>Approach</summary>

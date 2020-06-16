@@ -90,4 +90,16 @@ An efficient solution involves following steps.
 </p>
 </details>
 
+700. Search In A Binary Search Tree
+
+<details><summary>Approach</summary>
+<p>
+
+1. Compare value with root and return true if value matches.
+2. If value to be searched is less than root search in left sub tree.
+3. If value to be searched is greater than root search in right sub tree.
+
+</p>
+</details>
+
 981. Time Based Key-Value Store❗Time Limit Exceeded

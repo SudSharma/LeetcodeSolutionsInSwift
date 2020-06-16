@@ -1,7 +1,6 @@
 # Leetcode Solutions In Swift
 
 1. Two Sum
-
 <details><summary>Approach</summary>
 <p>
 
@@ -13,7 +12,6 @@
 </details>
 
 83. Remove Duplicates from Sorted List
-
 <details><summary>Approach</summary>
 <p>
 
@@ -23,7 +21,6 @@
 </details>
 
 284. Peeking Iterator ()
-
 <details><summary>Approach</summary>
 <p>
 
@@ -48,7 +45,6 @@
 </details>
 
 380. Insert Delete GetRandom O(1)
-
 <details><summary>Approach</summary>
 <p>
 
@@ -75,7 +71,6 @@
 </details>
 
 386. Largest Divisible Subset
-
 <details><summary>Approach</summary>
 <p>
 
@@ -90,8 +85,17 @@ An efficient solution involves following steps.
 </p>
 </details>
 
-700. Search In A Binary Search Tree
+468. Validate IP Address
+<details><summary>Approach</summary>
+<p>
 
+1. IPv4 - Check for components separated by ".". Count of components should be 4. Integer value should be in range of 0-255. Characters should be in range "0" - "9".  If integer value of component is greater than zero, it should not have a prefix of 0 and if integer value of component is zero its count should be 1
+2. IPv6 - Check for components separated by ":". Count of components should be 8. Lowercased characters should be in range "0" - "9" and "a" and "f". Each component's count should be between 1 and 4
+
+</p>
+</details>
+
+700. Search In A Binary Search Tree
 <details><summary>Approach</summary>
 <p>
 

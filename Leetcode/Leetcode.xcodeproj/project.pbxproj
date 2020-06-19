@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		32BC0621249C77F600D04FFA /* 275.H-IndexII.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32BC0620249C77F600D04FFA /* 275.H-IndexII.swift */; };
 		32BC0623249C797000D04FFA /* 275.HIndexIITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32BC0622249C797000D04FFA /* 275.HIndexIITests.swift */; };
+		32BC0625249CD89600D04FFA /* 274.H-Index.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32BC0624249CD89600D04FFA /* 274.H-Index.swift */; };
+		32BC0627249CDC6600D04FFA /* 274.HIndexTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32BC0626249CDC6600D04FFA /* 274.HIndexTests.swift */; };
 		32BF9CBD2493D74400308E47 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32BF9CBB2493D74400308E47 /* Assets.xcassets */; };
 		32BF9CC12493D74A00308E47 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32BF9CBF2493D74A00308E47 /* LaunchScreen.storyboard */; };
 		32BF9CC52493D75500308E47 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32BF9CC22493D75500308E47 /* ContentView.swift */; };
@@ -49,6 +51,8 @@
 /* Begin PBXFileReference section */
 		32BC0620249C77F600D04FFA /* 275.H-IndexII.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "275.H-IndexII.swift"; sourceTree = "<group>"; };
 		32BC0622249C797000D04FFA /* 275.HIndexIITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 275.HIndexIITests.swift; sourceTree = "<group>"; };
+		32BC0624249CD89600D04FFA /* 274.H-Index.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "274.H-Index.swift"; sourceTree = "<group>"; };
+		32BC0626249CDC6600D04FFA /* 274.HIndexTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 274.HIndexTests.swift; sourceTree = "<group>"; };
 		32BF9C932493D6E300308E47 /* Leetcode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Leetcode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		32BF9CA92493D6E500308E47 /* LeetcodeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LeetcodeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		32BF9CAF2493D6E500308E47 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -133,6 +137,7 @@
 				32BF9CF22495A64B00308E47 /* 1.TwoSumTests.swift */,
 				32BF9CFA2495E6F000308E47 /* 83.RemoveDuplicatesfromSortedListTests.swift */,
 				32BF9D22249ABBF300308E47 /* 130.SurroundedRegionsTests.swift */,
+				32BC0626249CDC6600D04FFA /* 274.HIndexTests.swift */,
 				32BC0622249C797000D04FFA /* 275.HIndexIITests.swift */,
 				32BF9CE4249538E300308E47 /* 284.PeekingIteratorTests.swift */,
 				32BF9CCA2493D9CC00308E47 /* 380.InsertDeleteGetRandomTests.swift */,
@@ -152,6 +157,7 @@
 				32BF9CFC24967BDB00308E47 /* 82.RemoveDuplicatesfromSortedListII.swift */,
 				32BF9CF82495E69400308E47 /* 83.RemoveDuplicatesfromSortedList.swift */,
 				32BF9D20249A46EC00308E47 /* 130.SurroundedRegions.swift */,
+				32BC0624249CD89600D04FFA /* 274.H-Index.swift */,
 				32BC0620249C77F600D04FFA /* 275.H-IndexII.swift */,
 				32BF9CE2249533E300308E47 /* 284.PeekingIterator.swift */,
 				32BF9CC82493D8A700308E47 /* 380.InsertDeleteGetRandomO(1).swift */,
@@ -299,6 +305,7 @@
 				32BF9D21249A46EC00308E47 /* 130.SurroundedRegions.swift in Sources */,
 				32BF9CF52495B2E200308E47 /* 981.TimeBasedKey-ValueStore.swift in Sources */,
 				32BF9CE3249533E300308E47 /* 284.PeekingIterator.swift in Sources */,
+				32BC0625249CD89600D04FFA /* 274.H-Index.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -312,6 +319,7 @@
 				32BF9CFB2495E6F000308E47 /* 83.RemoveDuplicatesfromSortedListTests.swift in Sources */,
 				32BF9CE5249538E300308E47 /* 284.PeekingIteratorTests.swift in Sources */,
 				32BF9D1B24987A6A00308E47 /* 700.SearchInABinarySearchTreeTests.swift in Sources */,
+				32BC0627249CDC6600D04FFA /* 274.HIndexTests.swift in Sources */,
 				32BF9CE12494EFB300308E47 /* 368.LargestDivisibleSubsetTests.swift in Sources */,
 				32BF9D23249ABBF300308E47 /* 130.SurroundedRegionsTests.swift in Sources */,
 				32BF9D1F2498E92500308E47 /* 468.ValidateIPAddressTests.swift in Sources */,

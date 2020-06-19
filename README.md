@@ -1,6 +1,7 @@
 # Leetcode Solutions In Swift
 
 1. Two Sum
+
 <details><summary>Approach</summary>
 <p>
 
@@ -12,6 +13,7 @@
 </details>
 
 83. Remove Duplicates from Sorted List
+
 <details><summary>Approach</summary>
 <p>
 
@@ -20,7 +22,29 @@
 </p>
 </details>
 
+274. H Index
+
+<details><summary>Approach</summary>
+<p>
+
+1. Sort citations. 
+2. Perform binary search as long as low <= high.
+
+</p>
+</details>
+
+275. H Index II
+
+<details><summary>Approach</summary>
+<p>
+
+1. Perform binary search as long as low <= high.
+
+</p>
+</details>
+
 284. Peeking Iterator ()
+
 <details><summary>Approach</summary>
 <p>
 
@@ -45,6 +69,7 @@
 </details>
 
 380. Insert Delete GetRandom O(1)
+
 <details><summary>Approach</summary>
 <p>
 
@@ -71,6 +96,7 @@
 </details>
 
 386. Largest Divisible Subset
+
 <details><summary>Approach</summary>
 <p>
 
@@ -86,6 +112,7 @@ An efficient solution involves following steps.
 </details>
 
 468. Validate IP Address
+
 <details><summary>Approach</summary>
 <p>
 
@@ -96,6 +123,7 @@ An efficient solution involves following steps.
 </details>
 
 700. Search In A Binary Search Tree
+
 <details><summary>Approach</summary>
 <p>
 

@@ -43,6 +43,8 @@
 		32BF9D1F2498E92500308E47 /* 468.ValidateIPAddressTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32BF9D1E2498E92500308E47 /* 468.ValidateIPAddressTests.swift */; };
 		32BF9D21249A46EC00308E47 /* 130.SurroundedRegions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32BF9D20249A46EC00308E47 /* 130.SurroundedRegions.swift */; };
 		32BF9D23249ABBF300308E47 /* 130.SurroundedRegionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32BF9D22249ABBF300308E47 /* 130.SurroundedRegionsTests.swift */; };
+		32E375D324D83408009D7750 /* 125.ValidPalindrome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32E375D224D83408009D7750 /* 125.ValidPalindrome.swift */; };
+		32E375D524D83422009D7750 /* 125.ValidPalindromeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32E375D424D83422009D7750 /* 125.ValidPalindromeTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -96,6 +98,8 @@
 		32BF9D1E2498E92500308E47 /* 468.ValidateIPAddressTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 468.ValidateIPAddressTests.swift; sourceTree = "<group>"; };
 		32BF9D20249A46EC00308E47 /* 130.SurroundedRegions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 130.SurroundedRegions.swift; sourceTree = "<group>"; };
 		32BF9D22249ABBF300308E47 /* 130.SurroundedRegionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 130.SurroundedRegionsTests.swift; sourceTree = "<group>"; };
+		32E375D224D83408009D7750 /* 125.ValidPalindrome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 125.ValidPalindrome.swift; sourceTree = "<group>"; };
+		32E375D424D83422009D7750 /* 125.ValidPalindromeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 125.ValidPalindromeTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +154,7 @@
 			children = (
 				32BF9CF22495A64B00308E47 /* 1.TwoSumTests.swift */,
 				32BF9CFA2495E6F000308E47 /* 83.RemoveDuplicatesfromSortedListTests.swift */,
+				32E375D424D83422009D7750 /* 125.ValidPalindromeTests.swift */,
 				32BF9D22249ABBF300308E47 /* 130.SurroundedRegionsTests.swift */,
 				32BC0626249CDC6600D04FFA /* 274.HIndexTests.swift */,
 				32BC0622249C797000D04FFA /* 275.HIndexIITests.swift */,
@@ -173,6 +178,7 @@
 				32BF9CFC24967BDB00308E47 /* 82.RemoveDuplicatesfromSortedListII.swift */,
 				32BF9CF82495E69400308E47 /* 83.RemoveDuplicatesfromSortedList.swift */,
 				321DFA6524AE2AD30020BC5C /* 107.BinaryTreeLevelOrderTraversalII.swift */,
+				32E375D224D83408009D7750 /* 125.ValidPalindrome.swift */,
 				32BF9D20249A46EC00308E47 /* 130.SurroundedRegions.swift */,
 				32BC0624249CD89600D04FFA /* 274.H-Index.swift */,
 				32BC0620249C77F600D04FFA /* 275.H-IndexII.swift */,
@@ -323,6 +329,7 @@
 				32BF9CFD24967BDB00308E47 /* 82.RemoveDuplicatesfromSortedListII.swift in Sources */,
 				32BF9D1D2498E8E800308E47 /* 468.ValidateIPAddress.swift in Sources */,
 				321DFA7224D6E53D0020BC5C /* 705.DesignHashSet.swift in Sources */,
+				32E375D324D83408009D7750 /* 125.ValidPalindrome.swift in Sources */,
 				321DFA6624AE2AD30020BC5C /* 107.BinaryTreeLevelOrderTraversalII.swift in Sources */,
 				321DFA6A24D672F60020BC5C /* 359.LoggerRateLimiter.swift in Sources */,
 				32BF9CC52493D75500308E47 /* ContentView.swift in Sources */,
@@ -349,6 +356,7 @@
 				32BF9D1B24987A6A00308E47 /* 700.SearchInABinarySearchTreeTests.swift in Sources */,
 				32BC0627249CDC6600D04FFA /* 274.HIndexTests.swift in Sources */,
 				32BF9CE12494EFB300308E47 /* 368.LargestDivisibleSubsetTests.swift in Sources */,
+				32E375D524D83422009D7750 /* 125.ValidPalindromeTests.swift in Sources */,
 				32BF9D23249ABBF300308E47 /* 130.SurroundedRegionsTests.swift in Sources */,
 				32BF9D1F2498E92500308E47 /* 468.ValidateIPAddressTests.swift in Sources */,
 				32BF9CF32495A64B00308E47 /* 1.TwoSumTests.swift in Sources */,

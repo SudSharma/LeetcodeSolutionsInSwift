@@ -32,6 +32,10 @@
 		3219F3D3251B826C00BB342C /* 134.GasStationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3219F3D2251B826C00BB342C /* 134.GasStationTests.swift */; };
 		3219F3D9251CC16400BB342C /* 389.FindTheDifference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3219F3D8251CC16400BB342C /* 389.FindTheDifference.swift */; };
 		3219F3DD251CC1E400BB342C /* 389.FindTheDifferenceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3219F3DC251CC1E400BB342C /* 389.FindTheDifferenceTests.swift */; };
+		3219F3E3251E180C00BB342C /* 179.LargestNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3219F3E2251E180C00BB342C /* 179.LargestNumber.swift */; };
+		3219F3E7251E1C7100BB342C /* 179.LargestNumberTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3219F3E6251E1C7100BB342C /* 179.LargestNumberTests.swift */; };
+		3219F3ED2520149800BB342C /* 496.TeemoAttacking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3219F3EC2520149800BB342C /* 496.TeemoAttacking.swift */; };
+		3219F3F1252014CC00BB342C /* 496.TeemoAttackingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3219F3F0252014CC00BB342C /* 496.TeemoAttackingTests.swift */; };
 		321DFA6624AE2AD30020BC5C /* 107.BinaryTreeLevelOrderTraversalII.swift in Sources */ = {isa = PBXBuildFile; fileRef = 321DFA6524AE2AD30020BC5C /* 107.BinaryTreeLevelOrderTraversalII.swift */; };
 		321DFA6824B0459D0020BC5C /* 957.PrisonCellsAfterNDays.swift in Sources */ = {isa = PBXBuildFile; fileRef = 321DFA6724B0459D0020BC5C /* 957.PrisonCellsAfterNDays.swift */; };
 		321DFA6A24D672F60020BC5C /* 359.LoggerRateLimiter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 321DFA6924D672F60020BC5C /* 359.LoggerRateLimiter.swift */; };
@@ -134,6 +138,10 @@
 		3219F3D2251B826C00BB342C /* 134.GasStationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 134.GasStationTests.swift; sourceTree = "<group>"; };
 		3219F3D8251CC16400BB342C /* 389.FindTheDifference.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 389.FindTheDifference.swift; sourceTree = "<group>"; };
 		3219F3DC251CC1E400BB342C /* 389.FindTheDifferenceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 389.FindTheDifferenceTests.swift; sourceTree = "<group>"; };
+		3219F3E2251E180C00BB342C /* 179.LargestNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 179.LargestNumber.swift; sourceTree = "<group>"; };
+		3219F3E6251E1C7100BB342C /* 179.LargestNumberTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 179.LargestNumberTests.swift; sourceTree = "<group>"; };
+		3219F3EC2520149800BB342C /* 496.TeemoAttacking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 496.TeemoAttacking.swift; sourceTree = "<group>"; };
+		3219F3F0252014CC00BB342C /* 496.TeemoAttackingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 496.TeemoAttackingTests.swift; sourceTree = "<group>"; };
 		321DFA6524AE2AD30020BC5C /* 107.BinaryTreeLevelOrderTraversalII.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 107.BinaryTreeLevelOrderTraversalII.swift; sourceTree = "<group>"; };
 		321DFA6724B0459D0020BC5C /* 957.PrisonCellsAfterNDays.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 957.PrisonCellsAfterNDays.swift; sourceTree = "<group>"; };
 		321DFA6924D672F60020BC5C /* 359.LoggerRateLimiter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 359.LoggerRateLimiter.swift; sourceTree = "<group>"; };
@@ -264,6 +272,7 @@
 				3260806224FF38FD005B079D /* 157.ReadNCharactersGivenRead4Tests.swift */,
 				3203D15E2509269400CFDABE /* 165.CompareVersionNumbersTests.swift */,
 				326D094A24E1711700A9FCBE /* 171.ExcelSheetColumnNumberTests.swift */,
+				3219F3E6251E1C7100BB342C /* 179.LargestNumberTests.swift */,
 				32E375DC24DB0DA7009D7750 /* 211.AddAndSearchWordDataStructureDesign.swift */,
 				3260806625007A3E005B079D /* 220.ContainsDuplicateIIITests.swift */,
 				3219F3C8251AE94F00BB342C /* 229.MajorityElementIITests.swift */,
@@ -284,6 +293,7 @@
 				32BF9D1E2498E92500308E47 /* 468.ValidateIPAddressTests.swift */,
 				3260805C24E80A58005B079D /* 484.FindPermutationTests.swift */,
 				3203D166250B019B00CFDABE /* 492.ConstructTheRectangleTests.swift */,
+				3219F3F0252014CC00BB342C /* 496.TeemoAttackingTests.swift */,
 				321DFA6F24D6E4850020BC5C /* 520.DetectCapitalTests.swift */,
 				32BF9D1A24987A6A00308E47 /* 700.SearchInABinarySearchTreeTests.swift */,
 				3219F3BC251A2ACD00BB342C /* 708.InsertIntoASortedCircularLinkedListTests.swift */,
@@ -313,6 +323,7 @@
 				3260806024FE6B7D005B079D /* 157.ReadNCharactersGivenRead4.swift */,
 				3203D15C2509256B00CFDABE /* 165.CompareVersionNumbers.swift */,
 				326D094824E170DC00A9FCBE /* 171.ExcelSheetColumnNumber.swift */,
+				3219F3E2251E180C00BB342C /* 179.LargestNumber.swift */,
 				32E375DA24DB0D7D009D7750 /* 211.AddAndSearchWordDataStructureDesign.swift */,
 				32608064250079FE005B079D /* 220.ContainsDuplicateIII.swift */,
 				3219F3C4251AE92100BB342C /* 229.MajorityElementII.swift */,
@@ -335,6 +346,7 @@
 				32BF9D1C2498E8E800308E47 /* 468.ValidateIPAddress.swift */,
 				3260805A24E80A12005B079D /* 484.FindPermutation.swift */,
 				3203D164250B018900CFDABE /* 492.ConstructTheRectangle.swift */,
+				3219F3EC2520149800BB342C /* 496.TeemoAttacking.swift */,
 				321DFA6D24D67C430020BC5C /* 520.DetectCapital.swift */,
 				32BF9D182498789700308E47 /* 700.SearchInABinarySearchTree.swift */,
 				321DFA7124D6E53D0020BC5C /* 705.DesignHashSet.swift */,
@@ -493,6 +505,7 @@
 				321DFA7224D6E53D0020BC5C /* 705.DesignHashSet.swift in Sources */,
 				3203D165250B018900CFDABE /* 492.ConstructTheRectangle.swift in Sources */,
 				3203D15D2509256B00CFDABE /* 165.CompareVersionNumbers.swift in Sources */,
+				3219F3ED2520149800BB342C /* 496.TeemoAttacking.swift in Sources */,
 				32E375D324D83408009D7750 /* 125.ValidPalindrome.swift in Sources */,
 				326D094924E170DC00A9FCBE /* 171.ExcelSheetColumnNumber.swift in Sources */,
 				321DFA6624AE2AD30020BC5C /* 107.BinaryTreeLevelOrderTraversalII.swift in Sources */,
@@ -506,6 +519,7 @@
 				321DFA6E24D67C430020BC5C /* 520.DetectCapital.swift in Sources */,
 				3260805F24EA4249005B079D /* 123.BestTimeToBuyAndSellStockIII.swift in Sources */,
 				3260805724E6A38A005B079D /* 409.LongestPalindrome.swift in Sources */,
+				3219F3E3251E180C00BB342C /* 179.LargestNumber.swift in Sources */,
 				3203D1552508053400CFDABE /* 346.MovingAverageFromDataStream.swift in Sources */,
 				32BF9D21249A46EC00308E47 /* 130.SurroundedRegions.swift in Sources */,
 				32BF9CF52495B2E200308E47 /* 981.TimeBasedKey-ValueStore.swift in Sources */,
@@ -556,6 +570,8 @@
 				32E375D524D83422009D7750 /* 125.ValidPalindromeTests.swift in Sources */,
 				3260806725007A3E005B079D /* 220.ContainsDuplicateIIITests.swift in Sources */,
 				3260805524E5681B005B079D /* 1286.IteratorForCombinationTests.swift in Sources */,
+				3219F3E7251E1C7100BB342C /* 179.LargestNumberTests.swift in Sources */,
+				3219F3F1252014CC00BB342C /* 496.TeemoAttackingTests.swift in Sources */,
 				3203D163250A499500CFDABE /* 299.BullsAndCowsTests.swift in Sources */,
 				3203D1572508066E00CFDABE /* 346.MovingAverageFromDataStreamTests.swift in Sources */,
 				32BF9D23249ABBF300308E47 /* 130.SurroundedRegionsTests.swift in Sources */,

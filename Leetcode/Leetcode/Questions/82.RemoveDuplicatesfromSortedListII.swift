@@ -9,23 +9,26 @@
 
 class RemoveDuplicatesfromSortedListII {
     func deleteDuplicates(_ head: ListNode?) -> ListNode? {
-        var currentNode = head
-        var previousDuplicateNodeValue = Int.min
+        if head == nil || head!.next == nil {
+            return head
+        }
         
-        while currentNode != nil {
-            if let nextNode = currentNode?.next, nextNode.val == currentNode?.val {
-                currentNode?.next = nextNode.next
-                previousDuplicateNodeValue = currentNode!.val
-            }
-            else if previousDuplicateNodeValue == currentNode?.val {
-                
-            }
-            else {
-                currentNode = currentNode?.next
+        let dummy = ListNode(0)
+        dummy.next = head
+        var node = dummy
+        
+        while node.next != nil && node.next!.next != nil {
+            if node.next!.val == node.next!.next!.val {
+                let val = node.next!.val
+                while node.next != nil && node.next!.val == val {
+                    node.next = node.next!.next
+                }
+            } else {
+                node = node.next!
             }
         }
         
-        return head
+        return dummy.next
     }
 }
 

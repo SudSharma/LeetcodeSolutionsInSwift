@@ -29,7 +29,11 @@
  Note that an empty tree is represented by NULL, therefore you would see the expected output (serialized tree format) as [], not null.
  */
 
-public class TreeNode: CustomStringConvertible {
+public class TreeNode: CustomStringConvertible, Equatable {
+    public static func == (lhs: TreeNode, rhs: TreeNode) -> Bool {
+        return lhs.val == rhs.val && lhs.left == rhs.left && lhs.right == rhs.right
+    }
+    
     public var description: String {
         return "Value - \(val) Left - \(String(describing: left)), Right - \(String(describing: right)))"
     }

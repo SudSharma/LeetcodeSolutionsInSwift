@@ -20,7 +20,11 @@
  */
 
 
-public class ListNode {
+public class ListNode: Equatable {
+    public static func == (lhs: ListNode, rhs: ListNode) -> Bool {
+        return lhs.val == rhs.val && lhs.next?.val == rhs.next?.val
+    }
+    
     public var val: Int
     public var next: ListNode?
     public init() { self.val = 0; self.next = nil; }

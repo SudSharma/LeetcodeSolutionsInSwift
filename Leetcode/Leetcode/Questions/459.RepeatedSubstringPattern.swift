@@ -36,9 +36,9 @@ class RepeatedSubstringPattern {
         {
             arr.append(char)
         }
-        var i:Int = 1
-        var j:Int = 0
-        var n:Int = s.count
+        var i = 1
+        var j = 0
+        let n = s.count
         var dp:[Int] = [Int](repeating:0,count:n + 1)
         while(i < n)
         {

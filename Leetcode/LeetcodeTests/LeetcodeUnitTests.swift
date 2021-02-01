@@ -216,6 +216,12 @@ class LeetcodeUnitTests: XCTestCase {
         XCTAssertTrue(obj.largestNumber([3,30,34,5,9]) == "9534330")
     }
     
+    func test_191_NumberOf1Bits() throws {
+        XCTAssertTrue(NumberOf1Bits().hammingWeight(11) == 3)
+        XCTAssertTrue(NumberOf1Bits().hammingWeight(128) == 1)
+        XCTAssertTrue(NumberOf1Bits().hammingWeight(4294967293) == 31)
+    }
+    
     func test_211_WordDictionary() throws {
         let obj = WordDictionary()
         obj.addWord("bad")
@@ -485,7 +491,7 @@ class LeetcodeUnitTests: XCTestCase {
         let node3 = Node(3)
         node2.next = node3
         node3.next = headNode
-        obj.insert(headNode, 0)
+        _ = obj.insert(headNode, 0)
     }
     
     func test_881_BoatsToSavePeople() throws {

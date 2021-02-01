@@ -61,7 +61,7 @@ class Solution957 {
         {
             N = 14
         }
-        for i in 0..<N
+        for _ in 0..<N
         {
             var temp:[Int] = [Int](repeating:0,count:cells.count)
             temp[0] = 0

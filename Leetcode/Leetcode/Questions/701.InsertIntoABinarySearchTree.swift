@@ -51,7 +51,7 @@ class InsertIntoABinarySearchTree {
                 rootNode.right = TreeNode(val)
             }
             else {
-                insertIntoBST(rootNode.right, val)
+                _ = insertIntoBST(rootNode.right, val)
             }
         }
         else {
@@ -59,7 +59,7 @@ class InsertIntoABinarySearchTree {
                 rootNode.left = TreeNode(val)
             }
             else {
-                insertIntoBST(rootNode.left, val)
+                _ = insertIntoBST(rootNode.left, val)
             }
         }
         

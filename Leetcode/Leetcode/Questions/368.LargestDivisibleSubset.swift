@@ -23,7 +23,7 @@
  Output: [1,2,4,8]
  */
 
-class Solution {
+class LargestDivisibleSubset {
     func largestDivisibleSubset(_ nums: [Int]) -> [Int] {
         if nums.isEmpty || nums.count == 1 {
             return nums

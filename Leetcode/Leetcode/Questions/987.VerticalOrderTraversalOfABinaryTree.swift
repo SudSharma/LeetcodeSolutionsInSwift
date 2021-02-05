@@ -46,7 +46,6 @@ class VerticalOrderTraversalOfABinaryTree {
     func verticalTraversal(_ root: TreeNode?) -> [[Int]] {
         var traversedValues = [Int: [(Int, Int)]]()
         verticalTraversal(root, 0, 0, &traversedValues)
-        print(traversedValues)
         var verticallyTraversedValues = [[Int]]()
         for key in traversedValues.keys.sorted() {
             if let values = traversedValues[key] {

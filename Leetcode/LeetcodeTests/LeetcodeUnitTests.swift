@@ -161,6 +161,39 @@ class LeetcodeUnitTests: XCTestCase {
         XCTAssertTrue(obj.canCompleteCircuit([2,3,4], [3,4,3]) == -1)
     }
     
+    func test_141_LinkedListCycle() throws {
+        let node4 = ListNode(-4)
+        let node1 = ListNode(1, node4)
+        let node2 = ListNode(2, node1)
+        let node3 = ListNode(3, node2)
+        node4.next = node2
+        XCTAssertTrue(LinkedListCycle().hasCycle(node3))
+        
+        let node2_1 = ListNode(2)
+        let node1_1 = ListNode(1, node2_1)
+        node2_1.next = node1_1
+        XCTAssertTrue(LinkedListCycle().hasCycle(node1_1))
+        
+        XCTAssertFalse(LinkedListCycle().hasCycle(ListNode(1)))
+        XCTAssertFalse(LinkedListCycle().hasCycle(ListNode(1, ListNode(2))))
+    }
+    
+    func test_142_LinkedListCycleII() throws {
+        let node4 = ListNode(-4)
+        let node1 = ListNode(1, node4)
+        let node2 = ListNode(2, node1)
+        let node3 = ListNode(3, node2)
+        node4.next = node2
+        //XCTAssertTrue(LinkedListCycleII().detectCycle(node3) == node4)
+        
+        let node2_1 = ListNode(2)
+        let node1_1 = ListNode(1, node2_1)
+        node2_1.next = node1_1
+        XCTAssertTrue(LinkedListCycleII().detectCycle(node1_1) == node2_1)
+        XCTAssertFalse(LinkedListCycleII().detectCycle(ListNode(1)) == nil)
+        XCTAssertFalse(LinkedListCycleII().detectCycle(ListNode(1, ListNode(2))) == nil)
+    }
+    
     func test_152_MaximumProductSubarray() throws {
         let obj = MaximumProductSubarray()
         XCTAssertTrue(obj.maxProduct([2,3,-2,4]) == 6)
@@ -469,10 +502,28 @@ class LeetcodeUnitTests: XCTestCase {
         XCTAssertTrue(obj1.countArrangement(1) == 1)
     }
     
+    func test_573_SquirrelSimulation() throws {
+        XCTAssertTrue(SquirrelSimulation().minDistance(5, 7, [2,2], [4,4], [[3,0], [2,5]]) == 12)
+    }
+    
+    func test_594_LongestHarmoniousSubsequence() throws {
+        XCTAssertTrue(LongestHarmoniousSubsequence().findLHS([1,3,2,2,5,2,3,7]) == 5)
+        XCTAssertTrue(LongestHarmoniousSubsequence().findLHS([1,2,3,4]) == 2)
+        XCTAssertTrue(LongestHarmoniousSubsequence().findLHS([1,1,1,1]) == 0)
+    }
+    
     func test_624_MaximumDistanceInArrays() throws {
         let obj = MaximumDistanceInArrays()
         XCTAssertTrue(obj.maxDistance([[1,4],[0,5]]) == 4)
         XCTAssertTrue(obj.maxDistance([[1,4,5],[0,2]]) == 5)
+    }
+    
+    func test_669_TrimABinarySearchTree() throws {
+        XCTAssertTrue(TrimABinarySearchTree().trimBST(TreeNode(1, left: TreeNode(0), right: TreeNode(2)), 1, 2) == TreeNode(1, right: TreeNode(2)))
+        XCTAssertTrue(TrimABinarySearchTree().trimBST(TreeNode(3, left: TreeNode(0, right: TreeNode(2, left: TreeNode(1))), right: TreeNode(4)), 1, 3) == TreeNode(3, left: TreeNode(2, left: TreeNode(1))))
+        XCTAssertTrue(TrimABinarySearchTree().trimBST(TreeNode(1), 1, 2) == TreeNode(1))
+        XCTAssertTrue(TrimABinarySearchTree().trimBST(TreeNode(1, right: TreeNode(2)), 1, 3) == TreeNode(1, right: TreeNode(2)))
+        XCTAssertTrue(TrimABinarySearchTree().trimBST(TreeNode(1, right: TreeNode(2)), 2, 4) == TreeNode(2))
     }
     
     func test_700_BinarySearchTree() throws {
@@ -492,6 +543,21 @@ class LeetcodeUnitTests: XCTestCase {
         node2.next = node3
         node3.next = headNode
         _ = obj.insert(headNode, 0)
+    }
+    
+    func test_750_NumberOfCornerRectangles() throws {
+        XCTAssertTrue(NumberOfCornerRectangles().countCornerRectangles([[1, 0, 0, 1, 0],
+                                                                        [0, 0, 1, 0, 1],
+                                                                        [0, 0, 0, 1, 0],
+                                                                        [1, 0, 1, 0, 1]]) == 1)
+        XCTAssertTrue(NumberOfCornerRectangles().countCornerRectangles([[1, 1, 1],
+                                                                        [1, 1, 1],
+                                                                        [1, 1, 1]]) == 9)
+        XCTAssertTrue(NumberOfCornerRectangles().countCornerRectangles([[1, 1, 1, 1]]) == 0)
+    }
+    
+    func test_760_FindAnagramMappings() throws {
+        XCTAssertTrue(FindAnagramMappings().anagramMappings([12, 28, 46, 32, 50], [50, 12, 32, 46, 28]) == [1, 4, 3, 2, 0])
     }
     
     func test_881_BoatsToSavePeople() throws {
@@ -536,21 +602,6 @@ class LeetcodeUnitTests: XCTestCase {
         XCTAssertTrue(kv3.get("love",25) == "low")
     }
     
-    func test_750_NumberOfCornerRectangles() throws {
-        XCTAssertTrue(NumberOfCornerRectangles().countCornerRectangles([[1, 0, 0, 1, 0],
-                                                                        [0, 0, 1, 0, 1],
-                                                                        [0, 0, 0, 1, 0],
-                                                                        [1, 0, 1, 0, 1]]) == 1)
-        XCTAssertTrue(NumberOfCornerRectangles().countCornerRectangles([[1, 1, 1],
-                                                                        [1, 1, 1],
-                                                                        [1, 1, 1]]) == 9)
-        XCTAssertTrue(NumberOfCornerRectangles().countCornerRectangles([[1, 1, 1, 1]]) == 0)
-    }
-    
-    func test_760_FindAnagramMappings() throws {
-        XCTAssertTrue(FindAnagramMappings().anagramMappings([12, 28, 46, 32, 50], [50, 12, 32, 46, 28]) == [1, 4, 3, 2, 0])
-    }
-    
     func test_987_VerticalOrderTraversalOfABinaryTree() throws {
         XCTAssertTrue(VerticalOrderTraversalOfABinaryTree().verticalTraversal(TreeNode(3, left: TreeNode(9), right: TreeNode(20, left: TreeNode(15), right: TreeNode(7)))) == [[9],[3,15],[20],[7]])
         XCTAssertTrue(VerticalOrderTraversalOfABinaryTree().verticalTraversal(TreeNode(1, left: TreeNode(2, left: TreeNode(4), right: TreeNode(5)), right: TreeNode(3, left: TreeNode(6), right: TreeNode(7)))) == [[4],[2],[1,5,6],[3],[7]])
@@ -562,6 +613,11 @@ class LeetcodeUnitTests: XCTestCase {
         let obj = SumOfRootToLeafBinaryNumbers()
         let root = TreeNode(1, left: TreeNode(0, left: TreeNode(0), right: TreeNode(1)), right: TreeNode(1, left: TreeNode(0), right: TreeNode(1)))
         XCTAssertTrue(obj.sumRootToLeaf(root) == 22)
+    }
+    
+    func test_1086_HighFive() throws {
+        XCTAssertTrue(HighFive().highFive([[1,91],[1,92],[2,93],[2,97],[1,60],[2,77],[1,65],[1,87],[1,100],[2,100],[2,76]]) == [[1,87],[2,88]])
+        XCTAssertTrue(HighFive().highFive([[1,100],[7,100],[1,100],[7,100],[1,100],[7,100],[1,100],[7,100],[1,100],[7,100]]) == [[1,100],[7,100]])
     }
     
     func test_1094_CarPooling() throws {
@@ -624,10 +680,28 @@ class LeetcodeUnitTests: XCTestCase {
         XCTAssert(FindACorrespondingNodeOfABinaryTreeInACloneOfThatTree().getTargetCopy(node8, node, node4) == node4)
     }
     
+    func test_1389_CreateTargetArrayInTheGivenOrder() throws {
+        XCTAssertTrue(CreateTargetArrayInTheGivenOrder().createTargetArray([0,1,2,3,4], [0,1,2,2,1]) == [0,4,1,3,2])
+        XCTAssertTrue(CreateTargetArrayInTheGivenOrder().createTargetArray([1,2,3,4,0], [0,1,2,3,0]) == [0,1,2,3,4])
+        XCTAssertTrue(CreateTargetArrayInTheGivenOrder().createTargetArray([1], [0]) == [1])
+    }
+    
+    func test_1431_KidsWithTheGreatestNumberOfCandies() throws {
+        XCTAssertTrue(KidsWithTheGreatestNumberOfCandies().kidsWithCandies([2,3,5,1,3], 3) == [true,true,true,false,true])
+        XCTAssertTrue(KidsWithTheGreatestNumberOfCandies().kidsWithCandies([4,2,1,1,2], 1) == [true,false,false,false,false])
+        XCTAssertTrue(KidsWithTheGreatestNumberOfCandies().kidsWithCandies([12,1,12], 10) == [true,false,true])
+    }
+    
     func test_1437_CheckIfAll1sAreAtLeastLengthKPlacesAway() throws {
         XCTAssertFalse(CheckIfAll1sAreAtLeastLengthKPlacesAway().kLengthApart([1,0,0,1,0,1], 2))
         XCTAssertTrue(CheckIfAll1sAreAtLeastLengthKPlacesAway().kLengthApart([1,1,1,1,1], 0))
         XCTAssertTrue(CheckIfAll1sAreAtLeastLengthKPlacesAway().kLengthApart([0,1,0,1], 1))
+    }
+    
+    func test_1480_RunningSumOf1DArray() throws {
+        XCTAssertTrue(RunningSumOf1DArray().runningSum([1,2,3,4]) == [1,3,6,10])
+        XCTAssertTrue(RunningSumOf1DArray().runningSum([1,1,1,1,1]) == [1,2,3,4,5])
+        XCTAssertTrue(RunningSumOf1DArray().runningSum([3,1,2,10,1]) == [3,4,6,16,17])
     }
     
     func test_1512_NumberOfGoodPairs() throws {

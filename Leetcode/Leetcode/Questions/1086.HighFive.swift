@@ -39,6 +39,22 @@
 
 class HighFive {
     func highFive(_ items: [[Int]]) -> [[Int]] {
-        return []
+        var scores = [Int: [Int]]()
+        var highFive = [[Int]]()
+        
+        for item in items {
+            if let _ = scores[item[0]] {
+                scores[item[0]]?.append(item[1])
+            }
+            else {
+                scores[item[0]] = [item[1]]
+            }
+        }
+        
+        for (key, value) in scores {
+            highFive.append([key, value.sorted()[value.count-5..<value.count].reduce(0) { $0 + $1 }/5])
+        }
+        
+        return highFive.sorted(by: { $0[0] < $1[0]})
     }
 }

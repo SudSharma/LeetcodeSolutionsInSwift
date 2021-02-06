@@ -88,6 +88,13 @@ class LeetcodeUnitTests: XCTestCase {
         XCTAssertTrue(arr4 == [1])
     }
     
+    func test_71_SimplifyPath() throws {
+        XCTAssertTrue(SimplifyPath().simplifyPath("/home/") == "/home")
+        XCTAssertTrue(SimplifyPath().simplifyPath("/../") == "/")
+        XCTAssertTrue(SimplifyPath().simplifyPath("/home//foo/") == "/home/foo")
+        XCTAssertTrue(SimplifyPath().simplifyPath("/a/./b/../../c/") == "/c")
+    }
+    
     func test_82_RemoveDuplicatesfromSortedListII() throws {
         XCTAssertTrue(RemoveDuplicatesfromSortedListII().deleteDuplicates(ListNode(1, ListNode(2, ListNode(3, ListNode(3, ListNode(4, ListNode(4, ListNode(5)))))))) == ListNode(1, ListNode(2, ListNode(5))))
         XCTAssertTrue(RemoveDuplicatesfromSortedListII().deleteDuplicates(ListNode(1, ListNode(1, ListNode(1, ListNode(2, ListNode(3)))))) == ListNode(2, ListNode(3)))

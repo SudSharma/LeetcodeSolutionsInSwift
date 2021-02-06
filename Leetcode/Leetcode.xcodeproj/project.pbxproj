@@ -20,6 +20,7 @@
 		3207F0E725CACBFF008ACADB /* 141.LinkedListCycle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3207F0E625CACBFF008ACADB /* 141.LinkedListCycle.swift */; };
 		3207F0EB25CAD7A5008ACADB /* 142.LinkedListCycleII.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3207F0EA25CAD7A5008ACADB /* 142.LinkedListCycleII.swift */; };
 		3207F0EF25CC2590008ACADB /* 594.LongestHarmoniousSubsequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3207F0EE25CC2590008ACADB /* 594.LongestHarmoniousSubsequence.swift */; };
+		3207F0F325CE231B008ACADB /* 71.SimplifyPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3207F0F225CE231A008ACADB /* 71.SimplifyPath.swift */; };
 		3219F3AF2518DC4400BB342C /* 1094.CarPooling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3219F3AE2518DC4400BB342C /* 1094.CarPooling.swift */; };
 		3219F3B9251A2A6900BB342C /* 708.InsertIntoASortedCircularLinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3219F3B8251A2A6900BB342C /* 708.InsertIntoASortedCircularLinkedList.swift */; };
 		3219F3C5251AE92100BB342C /* 229.MajorityElementII.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3219F3C4251AE92100BB342C /* 229.MajorityElementII.swift */; };
@@ -136,6 +137,7 @@
 		3207F0E625CACBFF008ACADB /* 141.LinkedListCycle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 141.LinkedListCycle.swift; sourceTree = "<group>"; };
 		3207F0EA25CAD7A5008ACADB /* 142.LinkedListCycleII.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 142.LinkedListCycleII.swift; sourceTree = "<group>"; };
 		3207F0EE25CC2590008ACADB /* 594.LongestHarmoniousSubsequence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 594.LongestHarmoniousSubsequence.swift; sourceTree = "<group>"; };
+		3207F0F225CE231A008ACADB /* 71.SimplifyPath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 71.SimplifyPath.swift; sourceTree = "<group>"; };
 		3219F3AE2518DC4400BB342C /* 1094.CarPooling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 1094.CarPooling.swift; sourceTree = "<group>"; };
 		3219F3B8251A2A6900BB342C /* 708.InsertIntoASortedCircularLinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 708.InsertIntoASortedCircularLinkedList.swift; sourceTree = "<group>"; };
 		3219F3C4251AE92100BB342C /* 229.MajorityElementII.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 229.MajorityElementII.swift; sourceTree = "<group>"; };
@@ -300,6 +302,7 @@
 				32513E7425BDB69A00027F4A /* 23.MergeKSortedLists.swift */,
 				3281FE5825AFE51C006C1D36 /* 28.ImplementstrStr().swift */,
 				32513EDA25C6D89300027F4A /* 31.NextPermutation.swift */,
+				3207F0F225CE231A008ACADB /* 71.SimplifyPath.swift */,
 				32BF9CFC24967BDB00308E47 /* 82.RemoveDuplicatesfromSortedListII.swift */,
 				32BF9CF82495E69400308E47 /* 83.RemoveDuplicatesfromSortedList.swift */,
 				3204F3F625AD49240006C290 /* 88.MergeSortedArray.swift */,
@@ -561,6 +564,7 @@
 				32BF9D1D2498E8E800308E47 /* 468.ValidateIPAddress.swift in Sources */,
 				321DFA7224D6E53D0020BC5C /* 705.DesignHashSet.swift in Sources */,
 				32513EA125C1B7B500027F4A /* 1680.ConcatenationOfConsecutiveBinaryNumbers.swift in Sources */,
+				3207F0F325CE231B008ACADB /* 71.SimplifyPath.swift in Sources */,
 				3203D165250B018900CFDABE /* 492.ConstructTheRectangle.swift in Sources */,
 				3203D15D2509256B00CFDABE /* 165.CompareVersionNumbers.swift in Sources */,
 				32513E4F25B90D1E00027F4A /* 339.NestedListWeightSum.swift in Sources */,

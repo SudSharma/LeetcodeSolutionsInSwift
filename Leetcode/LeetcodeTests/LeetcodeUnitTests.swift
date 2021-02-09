@@ -25,10 +25,11 @@ class LeetcodeUnitTests: XCTestCase {
     }
     
     func test_3_LongestSubstringWithoutRepeatingCharacters() throws {
+        XCTAssertTrue(LongestSubstringWithoutRepeatingCharacters().lengthOfLongestSubstring("aab") == 2)
+        XCTAssertTrue(LongestSubstringWithoutRepeatingCharacters().lengthOfLongestSubstring("ohomm") == 3)
         XCTAssertTrue(LongestSubstringWithoutRepeatingCharacters().lengthOfLongestSubstring("abcabcbb") == 3)
         XCTAssertTrue(LongestSubstringWithoutRepeatingCharacters().lengthOfLongestSubstring("bbbbb") == 1)
         XCTAssertTrue(LongestSubstringWithoutRepeatingCharacters().lengthOfLongestSubstring("pwwkew") == 3)
-        XCTAssertTrue(LongestSubstringWithoutRepeatingCharacters().lengthOfLongestSubstring("") == 0)
         XCTAssertTrue(LongestSubstringWithoutRepeatingCharacters().lengthOfLongestSubstring("dvdf") == 3)
     }
     
@@ -37,6 +38,27 @@ class LeetcodeUnitTests: XCTestCase {
         XCTAssertTrue(LongestPalindromicSubstring().longestPalindrome("cbbd") == "bb")
         XCTAssertTrue(LongestPalindromicSubstring().longestPalindrome("a") == "a")
         XCTAssertTrue(LongestPalindromicSubstring().longestPalindrome("ac") == "a")
+    }
+    
+    func test_8_StringToIntegerATOI() throws {
+        XCTAssertTrue(StringToIntegerATOI().myAtoi("2147483646") == 2147483646)
+        XCTAssertTrue(StringToIntegerATOI().myAtoi("20000000000000000000") == 2147483647)
+        XCTAssertTrue(StringToIntegerATOI().myAtoi("21474836460") == 2147483647)
+        XCTAssertTrue(StringToIntegerATOI().myAtoi("+-12") == 0)
+        XCTAssertTrue(StringToIntegerATOI().myAtoi("3.14159") == 3)
+        XCTAssertTrue(StringToIntegerATOI().myAtoi("42") == 42)
+        XCTAssertTrue(StringToIntegerATOI().myAtoi("   -42") == -42)
+        XCTAssertTrue(StringToIntegerATOI().myAtoi("4193 with words") == 4193)
+        XCTAssertTrue(StringToIntegerATOI().myAtoi("words and 987") == 0)
+        XCTAssertTrue(StringToIntegerATOI().myAtoi("-91283472332") == -2147483648)
+    }
+    
+    func test_12_IntegerToRoman() throws {
+        XCTAssertTrue(IntegerToRoman().intToRoman(3) == "III")
+        XCTAssertTrue(IntegerToRoman().intToRoman(4) == "IV")
+        XCTAssertTrue(IntegerToRoman().intToRoman(9) == "IX")
+        XCTAssertTrue(IntegerToRoman().intToRoman(58) == "LVIII")
+        XCTAssertTrue(IntegerToRoman().intToRoman(1994) == "MCMXCIV")
     }
     
     func test_20_ValidParentheses() throws {
@@ -191,14 +213,14 @@ class LeetcodeUnitTests: XCTestCase {
         let node2 = ListNode(2, node1)
         let node3 = ListNode(3, node2)
         node4.next = node2
-        //XCTAssertTrue(LinkedListCycleII().detectCycle(node3) == node4)
+        XCTAssertTrue(LinkedListCycleII().detectCycle(node3) == node2)
         
         let node2_1 = ListNode(2)
         let node1_1 = ListNode(1, node2_1)
         node2_1.next = node1_1
-        XCTAssertTrue(LinkedListCycleII().detectCycle(node1_1) == node2_1)
-        XCTAssertFalse(LinkedListCycleII().detectCycle(ListNode(1)) == nil)
-        XCTAssertFalse(LinkedListCycleII().detectCycle(ListNode(1, ListNode(2))) == nil)
+        XCTAssertTrue(LinkedListCycleII().detectCycle(node1_1) == node1_1)
+        XCTAssertTrue(LinkedListCycleII().detectCycle(ListNode(1)) == nil)
+        XCTAssertTrue(LinkedListCycleII().detectCycle(ListNode(1, ListNode(2))) == nil)
     }
     
     func test_152_MaximumProductSubarray() throws {
@@ -260,6 +282,15 @@ class LeetcodeUnitTests: XCTestCase {
         XCTAssertTrue(NumberOf1Bits().hammingWeight(11) == 3)
         XCTAssertTrue(NumberOf1Bits().hammingWeight(128) == 1)
         XCTAssertTrue(NumberOf1Bits().hammingWeight(4294967293) == 31)
+    }
+    
+    func test_199_BinaryTreeRightSideView() throws {
+        XCTAssertTrue(BinaryTreeRightSideView().rightSideView(TreeNode(1, left: TreeNode(2, right: TreeNode(5)), right: TreeNode(3, right: TreeNode(4)))) == [1,3,4])
+        XCTAssertTrue(BinaryTreeRightSideView().rightSideView(TreeNode(1)) == [1])
+        XCTAssertTrue(BinaryTreeRightSideView().rightSideView(TreeNode(1, left: TreeNode(2, left: TreeNode(3)), right: TreeNode(4, left: TreeNode(5)))) == [1, 4, 5])
+        XCTAssertTrue(BinaryTreeRightSideView().rightSideView(nil) == [])
+        XCTAssertTrue(BinaryTreeRightSideView().rightSideView(TreeNode(1, left: TreeNode(2))) == [1,2])
+        XCTAssertTrue(BinaryTreeRightSideView().rightSideView(TreeNode(1, left: TreeNode(2, left: TreeNode(4)), right: TreeNode(3))) == [1,3,4])
     }
     
     func test_211_WordDictionary() throws {
@@ -511,6 +542,8 @@ class LeetcodeUnitTests: XCTestCase {
     
     func test_573_SquirrelSimulation() throws {
         XCTAssertTrue(SquirrelSimulation().minDistance(5, 7, [2,2], [4,4], [[3,0], [2,5]]) == 12)
+        XCTAssertTrue(SquirrelSimulation().minDistance(5, 5, [3,2], [0,1], [[2,0],[4,1],[0,4],[1,3],[1,0],[3,4],[3,0],[2,3],[0,2],[0,0],[2,2],[4,2],[3,3],[4,4],[4,0],[4,3],[3,1],[2,1],[1,4],[2,4]]) == 100)
+        XCTAssertTrue(SquirrelSimulation().minDistance(9, 9, [7,2], [7,1], [[3,0],[7,7],[8,8],[0,8],[2,4],[4,5],[3,5],[4,2],[1,8]]) == 131)
     }
     
     func test_594_LongestHarmoniousSubsequence() throws {
@@ -531,6 +564,17 @@ class LeetcodeUnitTests: XCTestCase {
         XCTAssertTrue(TrimABinarySearchTree().trimBST(TreeNode(1), 1, 2) == TreeNode(1))
         XCTAssertTrue(TrimABinarySearchTree().trimBST(TreeNode(1, right: TreeNode(2)), 1, 3) == TreeNode(1, right: TreeNode(2)))
         XCTAssertTrue(TrimABinarySearchTree().trimBST(TreeNode(1, right: TreeNode(2)), 2, 4) == TreeNode(2))
+    }
+    
+    func test_694_NumberOfDistinctIslands() throws {
+        XCTAssertTrue(NumberOfDistinctIslands().numDistinctIslands([[1,1,0,0,0],
+                                                                    [1,1,0,0,0],
+                                                                    [0,0,0,1,1],
+                                                                    [0,0,0,1,1]]) == 1)
+        XCTAssertTrue(NumberOfDistinctIslands().numDistinctIslands([[1,1,0,1,1],
+                                                                    [1,0,0,0,0],
+                                                                    [0,0,0,0,1],
+                                                                    [1,1,0,1,1]]) == 3)
     }
     
     func test_700_BinarySearchTree() throws {
@@ -565,6 +609,11 @@ class LeetcodeUnitTests: XCTestCase {
     
     func test_760_FindAnagramMappings() throws {
         XCTAssertTrue(FindAnagramMappings().anagramMappings([12, 28, 46, 32, 50], [50, 12, 32, 46, 28]) == [1, 4, 3, 2, 0])
+    }
+    
+    func test_821_ShortestDistanceToACharacter() throws {
+        XCTAssertTrue(ShortestDistanceToACharacter().shortestToChar("loveleetcode", "e") == [3,2,1,0,1,0,0,1,2,2,1,0])
+        XCTAssertTrue(ShortestDistanceToACharacter().shortestToChar("aaab", "b") == [3,2,1,0])
     }
     
     func test_881_BoatsToSavePeople() throws {

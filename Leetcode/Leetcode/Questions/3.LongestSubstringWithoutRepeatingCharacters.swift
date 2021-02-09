@@ -40,27 +40,23 @@
 
 class LongestSubstringWithoutRepeatingCharacters {
     func lengthOfLongestSubstring(_ s: String) -> Int {
-        var str = ""
-        var longest = 0
-
-        for c in s {
-            if !str.contains(c) {
-                str.append(c)
-            } else {
-                longest = max(longest, str.count)
-                let index = str.index(str.startIndex, offsetBy: 1)
-                if str[..<index] == String(c) {
-                    str = str.replacingOccurrences(of: String(c), with: "")
-                } else {
-                    if let index = str.firstIndex(of: c) {
-                        let nextIndex = str.index(after: index)
-                        str = String(str[nextIndex...])
-                    }
+        var length = 0
+        var temp = ""
+        
+        for char in s {
+            if !temp.contains(char) {
+                temp.append(char)
+            }
+            else {
+                length = max(length, temp.count)
+                if let index = temp.firstIndex(of: char) {
+                    let nextIndex = temp.index(after: index)
+                    temp = String(temp[nextIndex...])
                 }
-                str.append(c)
+                temp.append(char)
             }
         }
-        longest = max(longest, str.count)
-        return longest
+        
+        return max(length, temp.count)
     }
 }

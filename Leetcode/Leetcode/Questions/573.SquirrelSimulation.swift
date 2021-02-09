@@ -30,7 +30,46 @@
 
 class SquirrelSimulation {
     func minDistance(_ height: Int, _ width: Int, _ tree: [Int], _ squirrel: [Int], _ nuts: [[Int]]) -> Int {
-        var minDistance = 0
-        return minDistance
+        var res = 0
+        var maxDiff = Int.min
+        
+        for nut in nuts {
+            let distance = abs(tree[0] - nut[0]) + abs(tree[1] - nut[1])
+            res += 2*distance
+            maxDiff = max(maxDiff, distance - abs(squirrel[0] - nut[0]) - abs(squirrel[1] - nut[1]))
+        }
+        
+        return res - maxDiff
+    }
+    
+    func minDistance1(_ height: Int, _ width: Int, _ tree: [Int], _ squirrel: [Int], _ nuts: [[Int]]) -> Int {
+        var nutsDistances = [(Int, Int)]()
+        
+        for nut in nuts {
+            let nutDistanceFromTree = abs(nut[0] - tree[0]) + abs(nut[1] - tree[1])
+            let nutDistanceFromSquirrel = abs(nut[0] - squirrel[0]) + abs(nut[1] - squirrel[1])
+            nutsDistances.append((nutDistanceFromTree, nutDistanceFromSquirrel))
+        }
+        
+        var totalDistance = 0
+        if let minimum = nutsDistances.min(by: {
+            if $0.1 == $1.1 {
+                return $0.0 > $1.0
+            }
+            else {
+                return $0.1 < $1.1
+            }
+        }) {
+            let minimumIndex = nutsDistances.firstIndex { $0.0 == minimum.0 && $0.1 == minimum.1 }
+            totalDistance = nutsDistances[minimumIndex!].0 + nutsDistances[minimumIndex!].1
+            
+            for index in 0..<nutsDistances.count {
+                if index != minimumIndex {
+                    totalDistance += nutsDistances[index].0*2
+                }
+            }
+        }
+        
+        return totalDistance
     }
 }

@@ -52,13 +52,25 @@ class LinkedListCycleII {
         }
         var startingNode: ListNode? = headNode
         var nextNode = startingNode
+        var hasCycle = false
         
         while startingNode != nil && nextNode != nil, nextNode?.next != nil {
             startingNode = startingNode?.next
             nextNode = nextNode?.next?.next
             if startingNode === nextNode {
-                return nextNode
+                hasCycle = true
+                break
             }
+        }
+        
+        startingNode = headNode
+        if hasCycle {
+            while startingNode !== nextNode {
+                nextNode = nextNode?.next
+                startingNode = startingNode?.next
+            }
+            
+            return nextNode
         }
         
         return nil

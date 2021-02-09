@@ -26,6 +26,37 @@
 // https://developer.apple.com/documentation/swift/indexingiterator
 
 class PeekingIterator {
+    var currentIndex = -1
+    var storage: [Int]
+    
+    init(_ arr: IndexingIterator<Array<Int>>) {
+        storage = arr.map( {$0 })
+    }
+    
+    func next() -> Int {
+        if hasNext() {
+            currentIndex += 1
+            let next = storage[currentIndex]
+            return next
+        }
+        
+        return -1
+    }
+    
+    func peek() -> Int {
+        if hasNext() {
+            return storage[currentIndex + 1]
+        }
+        
+        return -1
+    }
+    
+    func hasNext() -> Bool {
+        return currentIndex + 1 < storage.count
+    }
+}
+
+class PeekingIterator_Old {
     
     var elements = [Int]()
     var indexingIterator: IndexingIterator<Array<Int>>

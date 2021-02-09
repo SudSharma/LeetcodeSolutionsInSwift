@@ -364,6 +364,13 @@ class LeetcodeUnitTests: XCTestCase {
         XCTAssertFalse(obj1.hasNext())
     }
     
+    func test_287_FindTheDuplicateNumber() throws {
+        XCTAssertTrue(FindTheDuplicateNumber().findDuplicate([1,3,4,2,2]) == 2)
+        XCTAssertTrue(FindTheDuplicateNumber().findDuplicate([3,1,3,4,2]) == 3)
+        XCTAssertTrue(FindTheDuplicateNumber().findDuplicate([1,1]) == 1)
+        XCTAssertTrue(FindTheDuplicateNumber().findDuplicate([1,1,2]) == 1)
+    }
+    
     func test_290_WordPattern() throws {
         let obj = WordPattern()
         XCTAssertTrue(obj.wordPattern("abba", "dog cat cat dog"))
@@ -540,6 +547,25 @@ class LeetcodeUnitTests: XCTestCase {
         XCTAssertTrue(obj1.countArrangement(1) == 1)
     }
     
+    func test_538_ConvertBSTToGreaterTree() throws {
+        XCTAssertTrue(ConvertBSTToGreaterTree().convertBST(TreeNode(4,
+                                                                    left: TreeNode(1,
+                                                                                   left: TreeNode(0),
+                                                                                   right: TreeNode(2, right: TreeNode(3))),
+                                                                    right: TreeNode(6,
+                                                                                    left: TreeNode(5),
+                                                                                    right: TreeNode(7, right: TreeNode(8))))) ==
+                                                           TreeNode(30, left: TreeNode(36,
+                                                                                    left: TreeNode(36),
+                                                                                    right: TreeNode(35, right: TreeNode(33))),
+                                                                        right: TreeNode(21,
+                                                                                    left: TreeNode(26),
+                                                                                    right: TreeNode(15, right: TreeNode(8)))))
+        XCTAssertTrue(ConvertBSTToGreaterTree().convertBST(TreeNode(0, right: TreeNode(1))) == TreeNode(1, right: TreeNode(1)))
+        XCTAssertTrue(ConvertBSTToGreaterTree().convertBST(TreeNode(1, left: TreeNode(0), right: TreeNode(2))) == TreeNode(3, left: TreeNode(3), right: TreeNode(2)))
+        XCTAssertTrue(ConvertBSTToGreaterTree().convertBST(TreeNode(3, left: TreeNode(2, left: TreeNode(1)), right: TreeNode(4))) == TreeNode(7, left: TreeNode(9, left: TreeNode(10)), right: TreeNode(4)))
+    }
+    
     func test_573_SquirrelSimulation() throws {
         XCTAssertTrue(SquirrelSimulation().minDistance(5, 7, [2,2], [4,4], [[3,0], [2,5]]) == 12)
         XCTAssertTrue(SquirrelSimulation().minDistance(5, 5, [3,2], [0,1], [[2,0],[4,1],[0,4],[1,3],[1,0],[3,4],[3,0],[2,3],[0,2],[0,0],[2,2],[4,2],[3,3],[4,4],[4,0],[4,3],[3,1],[2,1],[1,4],[2,4]]) == 100)
@@ -556,6 +582,11 @@ class LeetcodeUnitTests: XCTestCase {
         let obj = MaximumDistanceInArrays()
         XCTAssertTrue(obj.maxDistance([[1,4],[0,5]]) == 4)
         XCTAssertTrue(obj.maxDistance([[1,4,5],[0,2]]) == 5)
+    }
+    
+    func test_645_SetMismatch() throws {
+        XCTAssertTrue(SetMismatch().findErrorNums([1,2,2,4]) == [2,3])
+        XCTAssertTrue(SetMismatch().findErrorNums([1,1]) == [1,2])
     }
     
     func test_669_TrimABinarySearchTree() throws {

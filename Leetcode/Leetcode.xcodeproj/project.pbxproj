@@ -26,6 +26,9 @@
 		3207F0FF25CFB50F008ACADB /* 12.IntegerToRoman.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3207F0FE25CFB50F008ACADB /* 12.IntegerToRoman.swift */; };
 		3207F10325D01C38008ACADB /* 821.ShortestDistanceToACharacter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3207F10225D01C38008ACADB /* 821.ShortestDistanceToACharacter.swift */; };
 		3207F10725D19255008ACADB /* 694.NumberOfDistinctIslands.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3207F10625D19255008ACADB /* 694.NumberOfDistinctIslands.swift */; };
+		3207F10B25D22EC1008ACADB /* 287.FindTheDuplicateNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3207F10A25D22EC1008ACADB /* 287.FindTheDuplicateNumber.swift */; };
+		3207F10F25D2BDB8008ACADB /* 538.ConvertBSTToGreaterTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3207F10E25D2BDB8008ACADB /* 538.ConvertBSTToGreaterTree.swift */; };
+		3207F11325D2FC1B008ACADB /* 645.SetMismatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3207F11225D2FC1B008ACADB /* 645.SetMismatch.swift */; };
 		3219F3AF2518DC4400BB342C /* 1094.CarPooling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3219F3AE2518DC4400BB342C /* 1094.CarPooling.swift */; };
 		3219F3B9251A2A6900BB342C /* 708.InsertIntoASortedCircularLinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3219F3B8251A2A6900BB342C /* 708.InsertIntoASortedCircularLinkedList.swift */; };
 		3219F3C5251AE92100BB342C /* 229.MajorityElementII.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3219F3C4251AE92100BB342C /* 229.MajorityElementII.swift */; };
@@ -148,6 +151,9 @@
 		3207F0FE25CFB50F008ACADB /* 12.IntegerToRoman.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 12.IntegerToRoman.swift; sourceTree = "<group>"; };
 		3207F10225D01C38008ACADB /* 821.ShortestDistanceToACharacter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 821.ShortestDistanceToACharacter.swift; sourceTree = "<group>"; };
 		3207F10625D19255008ACADB /* 694.NumberOfDistinctIslands.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 694.NumberOfDistinctIslands.swift; sourceTree = "<group>"; };
+		3207F10A25D22EC1008ACADB /* 287.FindTheDuplicateNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 287.FindTheDuplicateNumber.swift; sourceTree = "<group>"; };
+		3207F10E25D2BDB8008ACADB /* 538.ConvertBSTToGreaterTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 538.ConvertBSTToGreaterTree.swift; sourceTree = "<group>"; };
+		3207F11225D2FC1B008ACADB /* 645.SetMismatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 645.SetMismatch.swift; sourceTree = "<group>"; };
 		3219F3AE2518DC4400BB342C /* 1094.CarPooling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 1094.CarPooling.swift; sourceTree = "<group>"; };
 		3219F3B8251A2A6900BB342C /* 708.InsertIntoASortedCircularLinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 708.InsertIntoASortedCircularLinkedList.swift; sourceTree = "<group>"; };
 		3219F3C4251AE92100BB342C /* 229.MajorityElementII.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 229.MajorityElementII.swift; sourceTree = "<group>"; };
@@ -343,6 +349,7 @@
 				32BC0624249CD89600D04FFA /* 274.H-Index.swift */,
 				32BC0620249C77F600D04FFA /* 275.H-IndexII.swift */,
 				32BF9CE2249533E300308E47 /* 284.PeekingIterator.swift */,
+				3207F10A25D22EC1008ACADB /* 287.FindTheDuplicateNumber.swift */,
 				32FBE91C25072853002DF970 /* 290.WordPattern.swift */,
 				3203D160250A492100CFDABE /* 299.BullsAndCows.swift */,
 				32513E4E25B90D1E00027F4A /* 339.NestedListWeightSum.swift */,
@@ -363,9 +370,11 @@
 				3219F3EC2520149800BB342C /* 496.TeemoAttacking.swift */,
 				321DFA6D24D67C430020BC5C /* 520.DetectCapital.swift */,
 				32EB3BA625A207E800DF0FC3 /* 526.BeautifulArrangement.swift */,
+				3207F10E25D2BDB8008ACADB /* 538.ConvertBSTToGreaterTree.swift */,
 				32513F4225C8596000027F4A /* 573.SquirrelSimulation.swift */,
 				3207F0EE25CC2590008ACADB /* 594.LongestHarmoniousSubsequence.swift */,
 				32D69C382526CB1F004FC820 /* 624.MaximumDistanceInArrays.swift */,
+				3207F11225D2FC1B008ACADB /* 645.SetMismatch.swift */,
 				3285CB8025C9807500FD0F7A /* 669.TrimABinarySearchTree.swift */,
 				3207F10625D19255008ACADB /* 694.NumberOfDistinctIslands.swift */,
 				32BF9D182498789700308E47 /* 700.SearchInABinarySearchTree.swift */,
@@ -552,6 +561,7 @@
 				32EB3BC125A6155200DF0FC3 /* 1539.KthMissingPositiveNumber.swift in Sources */,
 				3219F3D9251CC16400BB342C /* 389.FindTheDifference.swift in Sources */,
 				32BF9CDD2494EF5C00308E47 /* 368.LargestDivisibleSubset.swift in Sources */,
+				3207F10F25D2BDB8008ACADB /* 538.ConvertBSTToGreaterTree.swift in Sources */,
 				32BF9CF12495A39600308E47 /* 1.TwoSum.swift in Sources */,
 				32BF9CF92495E69400308E47 /* 83.RemoveDuplicatesfromSortedList.swift in Sources */,
 				32513EDB25C6D89300027F4A /* 31.NextPermutation.swift in Sources */,
@@ -561,8 +571,10 @@
 				32EB3BD525A9872B00DF0FC3 /* 1662.CheckIfTwoStringArraysAreEquivalent.swift in Sources */,
 				32513E2F25B6692400027F4A /* 1679.MaxNumberOfKSumPairs.swift in Sources */,
 				32EB3B9D25A0D07C00DF0FC3 /* 1379.FindACorrespondingNodeOfABinaryTreeInACloneOfThatTree .swift in Sources */,
+				3207F11325D2FC1B008ACADB /* 645.SetMismatch.swift in Sources */,
 				3207F0F725CEFF23008ACADB /* 199.BinaryTreeRightSideView.swift in Sources */,
 				32513F4725C8C3A600027F4A /* 1480.RunningSumOf1DArray.swift in Sources */,
+				3207F10B25D22EC1008ACADB /* 287.FindTheDuplicateNumber.swift in Sources */,
 				3281FE5925AFE51C006C1D36 /* 28.ImplementstrStr().swift in Sources */,
 				3219F3B9251A2A6900BB342C /* 708.InsertIntoASortedCircularLinkedList.swift in Sources */,
 				32BC0621249C77F600D04FFA /* 275.H-IndexII.swift in Sources */,

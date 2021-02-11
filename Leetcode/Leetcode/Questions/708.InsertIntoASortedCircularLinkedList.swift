@@ -48,15 +48,6 @@
  -10^6 <= insertVal <= 10^6
  */
 
-public class Node {
-    public var val: Int
-    public var next: Node?
-    public init(_ val: Int) {
-        self.val = val
-        self.next = nil
-    }
-}
-
 class InsertIntoASortedCircularLinkedList {
     func insert(_ head: Node?, _ insertVal: Int) -> Node? {
         if head == nil {

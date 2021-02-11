@@ -61,6 +61,14 @@ class LeetcodeUnitTests: XCTestCase {
         XCTAssertTrue(IntegerToRoman().intToRoman(1994) == "MCMXCIV")
     }
     
+    func test_13_RomanToInteger() throws {
+        XCTAssertTrue(RomanToInteger().romanToInt("III") == 3)
+        XCTAssertTrue(RomanToInteger().romanToInt("IV") == 4)
+        XCTAssertTrue(RomanToInteger().romanToInt("IX") == 9)
+        XCTAssertTrue(RomanToInteger().romanToInt("LVIII") == 58)
+        XCTAssertTrue(RomanToInteger().romanToInt("MCMXCIV") == 1994)
+    }
+    
     func test_20_ValidParentheses() throws {
         XCTAssertFalse(ValidParentheses().isValid("["))
         XCTAssertTrue(ValidParentheses().isValid("()"))
@@ -188,6 +196,35 @@ class LeetcodeUnitTests: XCTestCase {
         let obj = GasStation()
         XCTAssertTrue(obj.canCompleteCircuit([1,2,3,4,5], [3,4,5,1,2]) == 3)
         XCTAssertTrue(obj.canCompleteCircuit([2,3,4], [3,4,3]) == -1)
+    }
+    
+    func test_138_CopyListWithRandomPointer() throws {
+        XCTAssertTrue(CopyListWithRandomPointer().copyRandomList(nil) == nil)
+        
+        let node1_1 = Node(3)
+        let node1_2 = Node(3)
+        let node1_3 = Node(3)
+        node1_1.next = node1_2
+        node1_2.next = node1_3
+        node1_2.random = node1_1
+        
+        //XCTAssertTrue(CopyListWithRandomPointer().copyRandomList(node1_1) == nil)
+        
+        let node2_1 = Node(7)
+        let node2_2 = Node(13)
+        let node2_3 = Node(11)
+        let node2_4 = Node(10)
+        let node2_5 = Node(1)
+        
+        node2_1.next = node2_2
+        node2_2.next = node2_3
+        node2_2.random = node2_1
+        node2_3.next = node2_4
+        node2_3.random = node2_5
+        node2_4.next = node2_5
+        node2_4.random = node2_3
+        node2_5.random = node2_1
+        XCTAssertTrue(CopyListWithRandomPointer().copyRandomList(node2_1) == nil)
     }
     
     func test_141_LinkedListCycle() throws {
@@ -582,6 +619,11 @@ class LeetcodeUnitTests: XCTestCase {
         let obj = MaximumDistanceInArrays()
         XCTAssertTrue(obj.maxDistance([[1,4],[0,5]]) == 4)
         XCTAssertTrue(obj.maxDistance([[1,4,5],[0,2]]) == 5)
+    }
+    
+    func test_634_FindTheDerangementOfAnArray() throws {
+        XCTAssertTrue(FindTheDerangementOfAnArray().findDerangement(3) == 2)
+        XCTAssertTrue(FindTheDerangementOfAnArray().findDerangement(4) == 9)
     }
     
     func test_645_SetMismatch() throws {

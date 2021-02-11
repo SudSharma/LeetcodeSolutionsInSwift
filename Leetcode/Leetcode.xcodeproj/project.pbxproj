@@ -32,6 +32,7 @@
 		3207F11725D31E9A008ACADB /* 634.FindTheDerangementOfAnArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3207F11625D31E99008ACADB /* 634.FindTheDerangementOfAnArray.swift */; };
 		3207F11B25D36ED6008ACADB /* 13.RomanToInteger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3207F11A25D36ED6008ACADB /* 13.RomanToInteger.swift */; };
 		3207F11F25D426F2008ACADB /* 138.CopyListWithRandomPointer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3207F11E25D426F2008ACADB /* 138.CopyListWithRandomPointer.swift */; };
+		3207F12325D4BCC2008ACADB /* 326.PowerOfThree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3207F12225D4BCC2008ACADB /* 326.PowerOfThree.swift */; };
 		3219F3AF2518DC4400BB342C /* 1094.CarPooling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3219F3AE2518DC4400BB342C /* 1094.CarPooling.swift */; };
 		3219F3B9251A2A6900BB342C /* 708.InsertIntoASortedCircularLinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3219F3B8251A2A6900BB342C /* 708.InsertIntoASortedCircularLinkedList.swift */; };
 		3219F3C5251AE92100BB342C /* 229.MajorityElementII.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3219F3C4251AE92100BB342C /* 229.MajorityElementII.swift */; };
@@ -160,6 +161,7 @@
 		3207F11625D31E99008ACADB /* 634.FindTheDerangementOfAnArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 634.FindTheDerangementOfAnArray.swift; sourceTree = "<group>"; };
 		3207F11A25D36ED6008ACADB /* 13.RomanToInteger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 13.RomanToInteger.swift; sourceTree = "<group>"; };
 		3207F11E25D426F2008ACADB /* 138.CopyListWithRandomPointer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 138.CopyListWithRandomPointer.swift; sourceTree = "<group>"; };
+		3207F12225D4BCC2008ACADB /* 326.PowerOfThree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 326.PowerOfThree.swift; sourceTree = "<group>"; };
 		3219F3AE2518DC4400BB342C /* 1094.CarPooling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 1094.CarPooling.swift; sourceTree = "<group>"; };
 		3219F3B8251A2A6900BB342C /* 708.InsertIntoASortedCircularLinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 708.InsertIntoASortedCircularLinkedList.swift; sourceTree = "<group>"; };
 		3219F3C4251AE92100BB342C /* 229.MajorityElementII.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 229.MajorityElementII.swift; sourceTree = "<group>"; };
@@ -360,6 +362,7 @@
 				3207F10A25D22EC1008ACADB /* 287.FindTheDuplicateNumber.swift */,
 				32FBE91C25072853002DF970 /* 290.WordPattern.swift */,
 				3203D160250A492100CFDABE /* 299.BullsAndCows.swift */,
+				3207F12225D4BCC2008ACADB /* 326.PowerOfThree.swift */,
 				32513E4E25B90D1E00027F4A /* 339.NestedListWeightSum.swift */,
 				32E375D624D985CC009D7750 /* 342.PowerofFour.swift */,
 				3203D1542508053400CFDABE /* 346.MovingAverageFromDataStream.swift */,
@@ -601,6 +604,7 @@
 				32FBE91D25072853002DF970 /* 290.WordPattern.swift in Sources */,
 				3207F0FF25CFB50F008ACADB /* 12.IntegerToRoman.swift in Sources */,
 				32D69C43252ABE77004FC820 /* 1288.RemoveCoveredIntervals.swift in Sources */,
+				3207F12325D4BCC2008ACADB /* 326.PowerOfThree.swift in Sources */,
 				32513F3B25C8510C00027F4A /* 191.NumberOf1Bits.swift in Sources */,
 				32513F4F25C8DC5500027F4A /* 1431.KidsWithTheGreatestNumberOfCandies.swift in Sources */,
 				32E375D724D985CC009D7750 /* 342.PowerofFour.swift in Sources */,

@@ -12,10 +12,10 @@ import XCTest
 class LeetcodeUnitTests: XCTestCase {
     
     func test_1_TwoSum() throws {
-        XCTAssertTrue(TwoSumSolution().twoSum([2, 7, 11, 15], 9) == [0, 1])
-        XCTAssertTrue(TwoSumSolution().twoSum([2, 4, 4, 15], 8) == [1, 2])
-        XCTAssertTrue(TwoSumSolution().twoSum([230,863,916,585,981,404,316,785,88,12,70,435,384,778,887,755,740,337,86,92,325,422,815,650,920,125,277,336,221,847,168,23,677,61,400,136,874,363,394,199,863,997,794,587,124,321,212,957,764,173,314,422,927,783,930,282,306,506,44,926,691,568,68,730,933,737,531,180,414,751,28,546,60,371,493,370,527,387,43,541,13,457,328,227,652,365,430,803,59,858,538,427,583,368,375,173,809,896,370,789], 542) == [28, 45])
-        XCTAssertTrue(TwoSumSolution().twoSumBruteForce([2, 7, 11, 15], 9) == [0, 1])
+        XCTAssertTrue(TwoSum().twoSum([2, 7, 11, 15], 9) == [0, 1])
+        XCTAssertTrue(TwoSum().twoSum([2, 4, 4, 15], 8) == [1, 2])
+        XCTAssertTrue(TwoSum().twoSum([230,863,916,585,981,404,316,785,88,12,70,435,384,778,887,755,740,337,86,92,325,422,815,650,920,125,277,336,221,847,168,23,677,61,400,136,874,363,394,199,863,997,794,587,124,321,212,957,764,173,314,422,927,783,930,282,306,506,44,926,691,568,68,730,933,737,531,180,414,751,28,546,60,371,493,370,527,387,43,541,13,457,328,227,652,365,430,803,59,858,538,427,583,368,375,173,809,896,370,789], 542) == [28, 45])
+        XCTAssertTrue(TwoSum().twoSumBruteForce([2, 7, 11, 15], 9) == [0, 1])
     }
     
     func test_2_AddTwoNumber() throws {
@@ -67,6 +67,12 @@ class LeetcodeUnitTests: XCTestCase {
         XCTAssertTrue(RomanToInteger().romanToInt("IX") == 9)
         XCTAssertTrue(RomanToInteger().romanToInt("LVIII") == 58)
         XCTAssertTrue(RomanToInteger().romanToInt("MCMXCIV") == 1994)
+    }
+    
+    func test_15_ThreeSum() throws {
+        XCTAssertTrue(ThreeSum().threeSum([-1,0,1,2,-1,-4]) == [[-1,-1,2],[-1,0,1]])
+        XCTAssertTrue(ThreeSum().threeSum([]) == [])
+        XCTAssertTrue(ThreeSum().threeSum([0]) == [])
     }
     
     func test_20_ValidParentheses() throws {
@@ -352,6 +358,12 @@ class LeetcodeUnitTests: XCTestCase {
         let obj = MajorityElementII()
         XCTAssertTrue(obj.majorityElement([3,2,3]).sorted() == [3])
         XCTAssertTrue(obj.majorityElement([1,1,1,3,3,2,2,2]).sorted() == [1,2])
+    }
+    
+    func test_242_ValidAnagram() throws {
+        XCTAssertTrue(ValidAnagram().isAnagram("anagram", "nagaram"))
+        XCTAssertFalse(ValidAnagram().isAnagram("rat", "car"))
+        XCTAssertFalse(ValidAnagram().isAnagram("aa", "a"))
     }
     
     func test_266_PalindromePermutation() throws {

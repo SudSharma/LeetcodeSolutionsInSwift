@@ -19,7 +19,7 @@
  return [0, 1].
  */
 
-class TwoSumSolution {
+class TwoSum {
     
     // Runtime: 32 ms, faster than 93.04% of Swift online submissions for Two Sum.
     // Memory Usage: 21.3 MB, less than 40.70% of Swift online submissions for Two Sum.

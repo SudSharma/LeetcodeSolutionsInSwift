@@ -36,6 +36,8 @@
 		3207F12725D4DFBD008ACADB /* 15.ThreeSum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3207F12625D4DFBD008ACADB /* 15.ThreeSum.swift */; };
 		3207F12D25D55FB0008ACADB /* 242.ValidAnagram.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3207F12C25D55FB0008ACADB /* 242.ValidAnagram.swift */; };
 		3207F13125D61C53008ACADB /* 100.SameTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3207F13025D61C53008ACADB /* 100.SameTree.swift */; };
+		3207F13525D6C6A5008ACADB /* 1342.NumberOfStepsToReduceANumberToZero.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3207F13425D6C6A5008ACADB /* 1342.NumberOfStepsToReduceANumberToZero.swift */; };
+		3207F13925D6C9CF008ACADB /* 1347.MinimumNumberOfStepsToMakeTwoStringsAnagram.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3207F13825D6C9CF008ACADB /* 1347.MinimumNumberOfStepsToMakeTwoStringsAnagram.swift */; };
 		3219F3AF2518DC4400BB342C /* 1094.CarPooling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3219F3AE2518DC4400BB342C /* 1094.CarPooling.swift */; };
 		3219F3B9251A2A6900BB342C /* 708.InsertIntoASortedCircularLinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3219F3B8251A2A6900BB342C /* 708.InsertIntoASortedCircularLinkedList.swift */; };
 		3219F3C5251AE92100BB342C /* 229.MajorityElementII.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3219F3C4251AE92100BB342C /* 229.MajorityElementII.swift */; };
@@ -168,6 +170,8 @@
 		3207F12625D4DFBD008ACADB /* 15.ThreeSum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 15.ThreeSum.swift; sourceTree = "<group>"; };
 		3207F12C25D55FB0008ACADB /* 242.ValidAnagram.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 242.ValidAnagram.swift; sourceTree = "<group>"; };
 		3207F13025D61C53008ACADB /* 100.SameTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 100.SameTree.swift; sourceTree = "<group>"; };
+		3207F13425D6C6A5008ACADB /* 1342.NumberOfStepsToReduceANumberToZero.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 1342.NumberOfStepsToReduceANumberToZero.swift; sourceTree = "<group>"; };
+		3207F13825D6C9CF008ACADB /* 1347.MinimumNumberOfStepsToMakeTwoStringsAnagram.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 1347.MinimumNumberOfStepsToMakeTwoStringsAnagram.swift; sourceTree = "<group>"; };
 		3219F3AE2518DC4400BB342C /* 1094.CarPooling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 1094.CarPooling.swift; sourceTree = "<group>"; };
 		3219F3B8251A2A6900BB342C /* 708.InsertIntoASortedCircularLinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 708.InsertIntoASortedCircularLinkedList.swift; sourceTree = "<group>"; };
 		3219F3C4251AE92100BB342C /* 229.MajorityElementII.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 229.MajorityElementII.swift; sourceTree = "<group>"; };
@@ -417,6 +421,8 @@
 				3260805224E567D8005B079D /* 1286.IteratorForCombination.swift */,
 				32D69C42252ABE77004FC820 /* 1288.RemoveCoveredIntervals.swift */,
 				32513E6A25BC492D00027F4A /* 1329.SortTheMatrixDiagonally.swift */,
+				3207F13425D6C6A5008ACADB /* 1342.NumberOfStepsToReduceANumberToZero.swift */,
+				3207F13825D6C9CF008ACADB /* 1347.MinimumNumberOfStepsToMakeTwoStringsAnagram.swift */,
 				32EB3B9C25A0D07C00DF0FC3 /* 1379.FindACorrespondingNodeOfABinaryTreeInACloneOfThatTree .swift */,
 				32513F4A25C8C56A00027F4A /* 1389.CreateTargetArrayInTheGivenOrder.swift */,
 				32513F4E25C8DC5500027F4A /* 1431.KidsWithTheGreatestNumberOfCandies.swift */,
@@ -611,6 +617,7 @@
 				32513ED325C5130D00027F4A /* 750.NumberOfCornerRectangles.swift in Sources */,
 				32513E8D25C049C000027F4A /* 1631.PathWithMinimumEffort.swift in Sources */,
 				32513EE925C79EEA00027F4A /* 760.FindAnagramMappings.swift in Sources */,
+				3207F13925D6C9CF008ACADB /* 1347.MinimumNumberOfStepsToMakeTwoStringsAnagram.swift in Sources */,
 				32FBE91D25072853002DF970 /* 290.WordPattern.swift in Sources */,
 				3207F0FF25CFB50F008ACADB /* 12.IntegerToRoman.swift in Sources */,
 				32D69C43252ABE77004FC820 /* 1288.RemoveCoveredIntervals.swift in Sources */,
@@ -634,6 +641,7 @@
 				32E375D324D83408009D7750 /* 125.ValidPalindrome.swift in Sources */,
 				32513E5325BA74FF00027F4A /* 1673.FindTheMostCompetitiveSubsequence.swift in Sources */,
 				326D094924E170DC00A9FCBE /* 171.ExcelSheetColumnNumber.swift in Sources */,
+				3207F13525D6C6A5008ACADB /* 1342.NumberOfStepsToReduceANumberToZero.swift in Sources */,
 				32513EA525C3956A00027F4A /* 1663.SmallestStringWithAGivenNumericValue.swift in Sources */,
 				321DFA6624AE2AD30020BC5C /* 107.BinaryTreeLevelOrderTraversalII.swift in Sources */,
 				32EB3B8925A0071A00DF0FC3 /* 1640.CheckArrayFormationThroughConcatenation.swift in Sources */,

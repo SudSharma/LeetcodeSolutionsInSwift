@@ -805,6 +805,20 @@ class LeetcodeUnitTests: XCTestCase {
         XCTAssertTrue(SortTheMatrixDiagonally().diagonalSort([[3,3,1,1],[2,2,1,2],[1,1,1,2]]) == [[1,1,1,1],[1,2,2,2],[1,2,3,3]])
     }
     
+    func test_1342_NumberOfStepsToReduceANumberToZero() throws {
+        XCTAssertTrue(NumberOfStepsToReduceANumberToZero().numberOfSteps(123) == 12)
+        XCTAssertTrue(NumberOfStepsToReduceANumberToZero().numberOfSteps(8) == 4)
+        XCTAssertTrue(NumberOfStepsToReduceANumberToZero().numberOfSteps(14) == 6)
+    }
+    
+    func test_1347_MinimumNumberOfStepsToMakeTwoStringsAnagram() throws {
+        XCTAssertTrue(MinimumNumberOfStepsToMakeTwoStringsAnagram().minSteps("bab", "aba") == 1)
+        XCTAssertTrue(MinimumNumberOfStepsToMakeTwoStringsAnagram().minSteps("leetcode", "practice") == 5)
+        XCTAssertTrue(MinimumNumberOfStepsToMakeTwoStringsAnagram().minSteps("anagram", "mangaar") == 0)
+        XCTAssertTrue(MinimumNumberOfStepsToMakeTwoStringsAnagram().minSteps("xxyyzz", "xxyyzz") == 0)
+        XCTAssertTrue(MinimumNumberOfStepsToMakeTwoStringsAnagram().minSteps("friend", "family") == 4)
+    }
+    
     func test_1379_FindACorrespondingNodeOfABinaryTreeInACloneOfThatTree() throws {
         let node3 = TreeNode(3, left: TreeNode(6), right: TreeNode(19))
         let node5 = TreeNode(7, left: TreeNode(4), right: TreeNode(3, left: TreeNode(6), right: TreeNode(19)))

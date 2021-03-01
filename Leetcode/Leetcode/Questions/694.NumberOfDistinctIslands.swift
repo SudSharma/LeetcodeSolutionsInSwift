@@ -34,12 +34,52 @@
  11
  are considered different island shapes, because we do not consider reflection / rotation.
  Note: The length of each dimension in the given grid does not exceed 50.
+ 
+ 
+ "X" - start
+ "O" - water
+ "L" - left
+ "R" - right
+ "U" - Up
+ "D" - Down
+ 
  */
 
 class NumberOfDistinctIslands {
-    func numDistinctIslands(_ grid: [[Int]]) -> Int {
-        var numDistinctIslands = 0
-        
-        return numDistinctIslands
+    func numDistinctIslands(_ matrix: [[Int]]) -> Int {
+        var seen = Set<String>()
+        var grid = matrix
+        let m = grid.count
+
+        if m == 0 {
+            return 0
+        }
+
+        let n = grid[0].count
+
+        func dfsIslands(_ row: Int, _ col: Int, _ path: String) -> String {
+            if row < 0 || col < 0 || row >= m || col >= n || grid[row][col] == 0 {
+                return String("O")
+            }
+            grid[row][col] = 0
+
+            let left = dfsIslands(row-1, col, "L")
+            let right = dfsIslands(row+1, col, "R")
+            let up = dfsIslands(row, col+1, "U")
+            let down = dfsIslands(row, col-1, "D")
+
+            return path+left+right+up+down
+        }
+
+        for row in 0..<m {
+            for col in 0..<n {
+                if (grid[row][col] == 1) {
+                    let path = dfsIslands(row, col, String("X"))
+                    seen.insert(path)
+                }
+            }
+        }
+
+        return seen.count
     }
 }
